@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعية كافل اليتيم إقليم فجيج - Association Kafil Al Yatim Figuig</title>
+    <meta name="description" content="جمعية كافل اليتيم إقليم فجيج - Association caritative pour la prise en charge des orphelins">
+    <meta name="keywords" content="جمعية, كافل اليتيم, فجيج, orphelins, association, charité, dons">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2c5530;
+            --secondary-color: #4a7c59;
+            --accent-color: #dc3545;
+            --warm-orange: #dc3545;
+            --light-blue: #3498db;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .header-logo {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            object-fit: cover;
+        }
+
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .lang-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 10px;
+            border-radius: 25px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 180px;
+            padding: 2rem 0;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            padding: 2rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--warm-orange));
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(44, 85, 48, 0.9), rgba(74, 124, 89, 0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23f0f8f0" width="1000" height="600"/><circle fill="%23e8f5e8" cx="200" cy="150" r="100"/><circle fill="%23d4f1d4" cx="800" cy="400" r="150"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, var(--accent-color), var(--warm-orange));
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
+        }
+
+        /* Sponsorship Section */
+        .sponsorship-content {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .sponsorship-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .sponsorship-card {
+            background: var(--bg-light);
+            border-radius: 15px;
+            padding: 2rem;
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .sponsorship-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .sponsorship-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .sponsorship-card .amount {
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .hadith-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .hadith-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .hadith-source {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .objective-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 3px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .objective-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .conditions-list {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .conditions-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .conditions-list li {
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            border-right: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .conditions-list li:hover {
+            background: #e8f5e8;
+            transform: translateX(-5px);
+        }
+
+        /* Activities Grid */
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .activity-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .activity-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 24px;
+            color: white;
+        }
+
+        .activity-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        /* About Section */
+        .objectives-list {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .objectives-list ol {
+            padding-right: 20px;
+        }
+
+        .objectives-list li {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .objectives-list li:hover {
+            background: var(--bg-light);
+        }
+
+        /* Donation Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 10% auto;
+            padding: 2rem;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            animation: modalSlide 0.3s ease;
+        }
+
+        @keyframes modalSlide {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        .close:hover {
+            color: var(--text-dark);
+        }
+
+        .bank-info {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border: 2px solid var(--accent-color);
+        }
+
+        .bank-account {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 0.5rem 0;
+            letter-spacing: 2px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .contact-info {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: var(--bg-light);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+           /* background: var(--accent-color);*/
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Social Media */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link.facebook { background: #3b5998; }
+        .social-link.youtube { background: #ff0000; }
+        .social-link.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .social-link.tiktok { background: #000000; }
+
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header-logo {
+                position: static;
+                margin-top: 10px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+
+            main {
+                margin-top: 220px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-links {
+                gap: 15px;
+            }
+
+            .social-link {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 2rem 0;
+                margin: 1rem 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .modal-content {
+                margin: 20% auto;
+                padding: 1.5rem;
+            }
+
+            .bank-account {
+                font-size: 1.2rem;
+            }
+
+            .header-logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .nav-links {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .contact-item {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .logo-section {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .header-logo {
+            right: auto;
+            left: 20px;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hidden {
+            display: none;
+        }
+               li {
+  line-height: 21px;
+}
+    </style>
+</head>
+<body>
+    <header>
+       <div class="container">
+            <div class="header-content">
+                               
+                <div class="language-selector">
+                    <button class="lang-btn active" onclick="changeLanguage('ar')">ar</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">fr</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">en</button>
+                    <button class="lang-btn" onclick="changeLanguage('es')">es</button>
+                    <button class="lang-btn" onclick="changeLanguage('de')">de</button>
+                    <button class="lang-btn" onclick="changeLanguage('it')">it</button>
+                    <button class="lang-btn" onclick="changeLanguage('nl')">nl</button>
+                    <button class="lang-btn" onclick="changeLanguage('pt')">pt</button>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" data-translate="nav-home">الرئيسية</a></li>
+                    <li><a href="#about" data-translate="nav-about">من نحن</a></li>
+                    <li><a href="#sponsorship" data-translate="nav-sponsorship">كفالة اليتيم</a></li>
+                    <li><a href="#activities" data-translate="nav-activities">أنشطتنا</a></li>
+                    <li><a href="#contact" data-translate="nav-contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="container">
+                <h1 data-translate="hero-title">جمعية كافل اليتيم إقليم فجيج</h1>
+                <p data-translate="hero-subtitle">معاً من أجل مستقبل أفضل للأيتام والمحتاجين</p>
+                <button class="cta-button" onclick="showDonationModal()" data-translate="donate-button">تبرع الآن</button>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- About Section -->
+            <section id="about" class="section fade-in">
+                <h2 class="section-title" data-translate="about-title">من نحن</h2>
+                <div class="objectives-list">
+                    <h3 data-translate="objectives-title">تهدف جمعية كافل اليتيم إلى:</h3>
+                    <ol>
+                        <li data-translate="objective-1">التكفل باليتامى من الناحية المادية والمعنوية والسهر على العناية بهم.</li>
+                        <li data-translate="objective-2">المساهمة في تحقيق أهداف المبادرة الوطنية للتنمية البشرية والبحث مع الجهات الرامية إلى التنمية المحلية وتحسين الدخل الفردي قصد التقليص من أسباب الفقر والتهميش.</li>
+                        <li data-translate="objective-3">إصلاح الطرق و فك العزلة عن المناطق القروية التي تعاني من الهشاشة والفقر.</li>
+                        <li data-translate="objective-4">إحياء وتعزيز روح التعاون والتكافل الاجتماعي.</li>
+                        <li data-translate="objective-5">تشجيع التمدرس والنقل المدرسي بالوسط القروي خصوصا الأطفال الأيتام.</li>
+                        <li data-translate="objective-6">المحافظة على البيئة وتشجيع دعم المشاريع البيئية والمساعدة في حفر الآبار.</li>
+                        <li data-translate="objective-7">تناول ومعالجة القضايا التي تهم دعم ومساعدة الشباب والطفولة والمرأة بالوسط القروي والحضري.</li>
+                        <li data-translate="objective-8">العناية بفئة المسنين والأرامل والأيتام ومساعدة الفقراء والمعوزين.</li>
+                        <li data-translate="objective-9">عقد شراكات مع الجمعيات والهيئات المحلية والجهوية والوطنية والدولية العاملة في مجال يوافق توجهات الجمعية.</li>
+                        <li data-translate="objective-10">تنظيم لقاءات تحسيسية تهم الشأن المحلي والوطني وأنشطة تربوية وترفيهية.</li>
+                        <li data-translate="objective-11">التنسيق مع الهيئات والجهات المعنية في تحسين الخدمات الاجتماعية والصحية في الوسط القروي والحضري وإعداد البرامج المتعلقة بها.</li>
+                        <li data-translate="objective-12">تلجأ الجمعية إلى تحقيق أهدافها إلى جميع السبل المشروعة وتعتمد أسلوب الحوار والتعاون والتشارك.</li>
+                        <li data-translate="objective-13">الاستفادة من وسائل الدعم التي تمنحها الهيئات العمومية والجماعات المحلية والمنظمات الدولية الحكومية والغير الحكومية والمبادرات الفردية والجماعية الهادفة إلى تحقيق التعاون.</li>
+                        <li data-translate="objective-14">التنسيق مع الهيئات والمصالح والمجالس الحضرية والقروية الإقليمية والجهوية والوطنية في تسهيل المهام.</li>
+                        <li data-translate="objective-15">التنسيق مع الوكالات وشبكة الاتصال والتواصل في تحسين خدمات الشبكة الاتصالية والتواصلية لتردي حالتها بالمنطقة وقوة حاجة الساكنة إليها وقت المرض والشدة وسوء حالة الطقس.</li>
+                        <li data-translate="objective-16">المساهمة في التنمية والاهتمام بالحالات الاجتماعية الفقيرة وكذا الحالات المرضية.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Sponsorship Section -->
+            <section id="sponsorship" class="section fade-in">
+                <h2 class="section-title" data-translate="sponsorship-title">برنامج كفالة اليتيم</h2>
+                
+                <!-- What is sponsorship -->
+                <div class="sponsorship-content">
+                    <h3 data-translate="sponsorship-what-title">ماذا نقصد بكفالة اليتيم</h3>
+                    <p data-translate="sponsorship-what-desc">كفالة اليتيم مساعدة مادية شهرية راتبة تخصص ليتيم أو أكثر يعيش في بيئته الأسرية الأصلية تسهم جزئيا في تأمين شروط العيش الكريم له ولأسرته، من غذاء ولباس ومسكن</p>
+                </div>
+
+                <!-- Hadith Section -->
+                <div class="hadith-section">
+                    <div class="hadith-text" data-translate="hadith-text">
+                        "أَنَا وَكَافِلُ الْيَتِيمِ لَهُ أَوْ لِغَيْرِهِ فِي الْجَنَّةِ كَهَاتَيْنِ إِذَا اتَّقَى وَأَشَارَ بِإِصْبُعَيْهِ الْوُسْطَى وَالَّتِي تَلِي الْإِبْهَام"
+                    </div>
+                    <div class="hadith-source" data-translate="hadith-source">
+                        رواه مالك عن صفوان بن سليم
+                    </div>
+                </div>
+
+                <!-- Sponsorship Types -->
+                <div class="sponsorship-types">
+                    <div class="sponsorship-card">
+                        <h4 data-translate="collective-sponsorship">الكفالة الجماعية</h4>
+                        <div class="amount" data-translate="collective-amount">100 درهم / 10 يورو</div>
+                        <p data-translate="collective-desc">يقوم كل منخرط في الجمعية بالمساهمة كل شهر بـ 100 درهم مغربي (ما يعادل 10 يورو)، توزع مساهمات المنخرطين على الأيتام على شكل منح مالية شهرية.</p>
+                    </div>
+                    <div class="sponsorship-card">
+                        <h4 data-translate="individual-sponsorship">الكفالة الفردية</h4>
+                        <div class="amount" data-translate="individual-amount">مبلغ مخصص</div>
+                        <p data-translate="individual-desc">يختار المنخرط يتيماً أو أكثر ويحدد منحة مالية ترسل إليه كل شهر.</p>
+                    </div>
+                </div>
+
+                <!-- Objectives -->
+                <div class="sponsorship-content">
+                    <h3 data-translate="sponsorship-objectives-title">أهدافنا من كفالة اليتيم</h3>
+                    <div class="objectives-grid">
+                        <div class="objective-item">
+                            <p data-translate="sponsorship-obj-1">تمكين الأيتام من النمو الطبيعي السوي جسدياً ونفسياً وعقلياً واجتماعياً</p>
+                        </div>
+                        <div class="objective-item">
+                            <p data-translate="sponsorship-obj-2">تأمين الرعاية الصحية والنفسية والاجتماعية والتربوية للأيتام</p>
+                        </div>
+                        <div class="objective-item">
+                            <p data-translate="sponsorship-obj-3">صناعة نجاح وتألق اليتيم العلمي والتربوي والاجتماعي والاندماجي</p>
+                        </div>
+                        <div class="objective-item">
+                            <p data-translate="sponsorship-obj-4">دعم أسرة اليتيم محافظة على تماسكها واستقرارها وأدوارها</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficiaries -->
+                <div class="conditions-list">
+                    <h3 data-translate="beneficiaries-title">من يستفيد من كفالة اليتيم؟</h3>
+                    <p data-translate="beneficiaries-intro">يستفيد من كفالة اليتيم في بيئته الأسرية من تتوفر فيه مجموع الشروط الآتية:</p>
+                    <ul>
+                        <li data-translate="condition-1">أن يكون اليتيم حقيقياً (وفاة الأب، أو الأم والأب معاً)</li>
+                        <li data-translate="condition-2">أن يكون اليتيم يعيش مع أمه أو أحد جديه أو إخوته أو خالته.. لا في دار الأيتام</li>
+                        <li data-translate="condition-3">أن تكون الأسرة التي تحتضن اليتيم فقيرة أو عاجزة</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Activities Section -->
+            <section id="activities" class="section fade-in">
+                <h2 class="section-title" data-translate="activities-title">أنشطتنا</h2>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-icon">🎒</div>
+                        <h3 data-translate="activity-school">الدخول المدرسي</h3>
+                        <p data-translate="activity-school-desc">توفير المستلزمات المدرسية والحقائب للأطفال الأيتام والمحتاجين لضمان حقهم في التعليم.</p>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🥘</div>
+                        <h3 data-translate="activity-ramadan">قفة رمضان</h3>
+                        <p data-translate="activity-ramadan-desc">توزيع السلال الغذائية على الأسر المحتاجة خلال شهر رمضان المبارك.</p>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">👕</div>
+                        <h3 data-translate="activity-eid-clothes">ملابس العيد</h3>
+                        <p data-translate="activity-eid-clothes-desc">توفير الملابس الجديدة للأطفال الأيتام لإدخال الفرحة على قلوبهم في العيد.</p>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🐑</div>
+                        <h3 data-translate="activity-sacrifice">أضحية العيد</h3>
+                        <p data-translate="activity-sacrifice-desc">توزيع الأضاحي على الأسر الفقيرة والمحتاجة في عيد الأضحى المبارك.</p>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🛏️</div>
+                        <h3 data-translate="activity-blankets">توزيع الأغطية</h3>
+                        <p data-translate="activity-blankets-desc">توفير الأغطية والملابس الشتوية للأسر المحتاجة خلال فصل الشتاء.</p>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🏗️</div>
+                        <h3 data-translate="activity-projects">مشاريع أخرى</h3>
+                        <p data-translate="activity-projects-desc">مشاريع تنموية متنوعة لتحسين أوضاع المجتمع المحلي والمناطق القروية.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section fade-in">
+            
+                <h2 class="section-title" data-translate="contact-title">اتصل بنا</h2>
+                <p align="center">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong data-translate="address-label">العنوان:</strong>
+                            <span>67 تجزئة الرياض بوعرفة المغرب Lot. Arriyadh N° 67 Bouarfa Maroc </span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong data-translate="phone-label">الهاتف:</strong>
+                            <span>00212622226199 / 0032484078663</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong data-translate="email-label">البريد الإلكتروني:</strong>
+                            <span>akyf21@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                </p>
+              
+              </section>
+
+            <!-- Social Media Section -->
+            <section class="section">
+                <h2 class="section-title" data-translate="social-title">تابعونا على وسائل التواصل</h2>
+                <div class="social-links">
+                <a href="https://www.youtube.com/@KafilYatimFiguig" class="social-link youtube" title="YouTube" target="_blank"><font size=2.5px>YouTube</font></a>
+                    <a href="https://web.facebook.com/people/%D8%AC%D9%8E%D9%85%D9%92%D8%B9%D9%90%D9%8A%D9%91%D9%8E%D8%A9-%D9%83%D8%A7%D9%81%D9%90%D9%84%D9%90-%D8%A7%D9%8E%D9%84%D9%92%D9%8A%D9%8E%D8%AA%D9%8A%D9%85%D9%90-%D8%A5%D9%82%D9%84%D9%8A%D9%85-%D9%81%D8%AC%D9%8A%D8%AC/100089053565658/?rdid=6SKb8oZNiYpiO9Ma&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1LK9D2jSKc%2F%3F_rdc%3D1%26_rdr" class="social-link facebook" title="Facebook" target="_blank"><font size=2.4px>Facebook</font></a>
+                    <a href="https://www.instagram.com/KafilYatimFiguig/" class="social-link instagram" title="Instagram" target="_blank"><font size=2.3px>Instagram</font></a>
+                                    </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Donation Modal -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDonationModal()">&times;</span>
+            <h2 data-translate="donation-modal-title">معلومات التبرع</h2>
+            <div class="bank-info">
+                <p data-translate="donation-bank-name"><strong>البنك: القرض الفلاحي للمغرب</strong></p>
+                <p data-translate="donation-account-label"><strong>رقم الحساب:</strong></p>
+                <div class="bank-account"><font size="2.1px">225312019608298651010433</div>
+                <p><strong>SWIFT : CNCAMAMR</strong></p>
+                <p><strong>IBAN : MA64</strong></p></font>
+                 <p data-translate="donation-association-name"><strong>باسم: جمعية كافل اليتيم </strong></p>
+            </div>
+            <p data-translate="donation-thank-you">شكراً لكم على دعمكم ومساهمتكم في أعمال الخير</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p data-translate="footer-text">&copy; 2025 جمعية كافل اليتيم إقليم فجيج - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Translation data
+        const translations = {
+            ar: {
+                'site-title': 'جمعية كافل اليتيم إقليم فجيج',
+                'nav-home': 'الرئيسية',
+                'nav-about': 'من نحن',
+                'nav-sponsorship': 'كفالة اليتيم',
+                'nav-activities': 'أنشطتنا',
+                'nav-donate': 'تبرع',
+                'nav-contact': 'اتصل بنا',
+                'hero-title': 'جمعية كافل اليتيم إقليم فجيج',
+                'hero-subtitle': 'معاً من أجل مستقبل أفضل للأيتام والمحتاجين',
+                'donate-button': 'تبرع الآن',
+                'about-title': 'من نحن',
+                'objectives-title': 'تهدف جمعية كافل اليتيم إلى:',
+                'objective-1': 'التكفل باليتامى من الناحية المادية والمعنوية والسهر على العناية بهم.',
+                'objective-2': 'المساهمة في تحقيق أهداف المبادرة الوطنية للتنمية البشرية والبحث مع الجهات الرامية إلى التنمية المحلية وتحسين الدخل الفردي قصد التقليص من أسباب الفقر والتهميش.',
+                'objective-3': 'إصلاح الطرق و فك العزلة عن المناطق القروية التي تعاني من الهشاشة والفقر.',
+                'objective-4': 'إحياء وتعزيز روح التعاون والتكافل الاجتماعي.',
+                'objective-5': 'تشجيع التمدرس والنقل المدرسي بالوسط القروي خصوصا الأطفال الأيتام.',
+                'objective-6': 'المحافظة على البيئة وتشجيع دعم المشاريع البيئية والمساعدة في حفر الآبار.',
+                'objective-7': 'تناول ومعالجة القضايا التي تهم دعم ومساعدة الشباب والطفولة والمرأة بالوسط القروي والحضري.',
+                'objective-8': 'العناية بفئة المسنين والأرامل والأيتام ومساعدة الفقراء والمعوزين.',
+                'objective-9': 'عقد شراكات مع الجمعيات والهيئات المحلية والجهوية والوطنية والدولية العاملة في مجال يوافق توجهات الجمعية.',
+                'objective-10': 'تنظيم لقاءات تحسيسية تهم الشأن المحلي والوطني وأنشطة تربوية وترفيهية.',
+                'objective-11': 'التنسيق مع الهيئات والجهات المعنية في تحسين الخدمات الاجتماعية والصحية في الوسط القروي والحضري وإعداد البرامج المتعلقة بها.',
+                'objective-12': 'تلجأ الجمعية إلى تحقيق أهدافها إلى جميع السبل المشروعة وتعتمد أسلوب الحوار والتعاون والتشارك.',
+                'objective-13': 'الاستفادة من وسائل الدعم التي تمنحها الهيئات العمومية والجماعات المحلية والمنظمات الدولية الحكومية والغير الحكومية والمبادرات الفردية والجماعية الهادفة إلى تحقيق التعاون.',
+                'objective-14': 'التنسيق مع الهيئات والمصالح والمجالس الحضرية والقروية الإقليمية والجهوية والوطنية في تسهيل المهام.',
+                'objective-15': 'التنسيق مع الوكالات وشبكة الاتصال والتواصل في تحسين خدمات الشبكة الاتصالية والتواصلية لتردي حالتها بالمنطقة وقوة حاجة الساكنة إليها وقت المرض والشدة وسوء حالة الطقس.',
+                'objective-16': 'المساهمة في التنمية والاهتمام بالحالات الاجتماعية الفقيرة وكذا الحالات المرضية.',
+                'sponsorship-title': 'برنامج كفالة اليتيم',
+                'sponsorship-what-title': 'ماذا نقصد بكفالة اليتيم',
+                'sponsorship-what-desc': 'كفالة اليتيم مساعدة مادية شهرية راتبة تخصص ليتيم أو أكثر يعيش في بيئته الأسرية الأصلية تسهم جزئيا في تأمين شروط العيش الكريم له ولأسرته، من غذاء ولباس ومسكن',
+                'hadith-text': '"أَنَا وَكَافِلُ الْيَتِيمِ لَهُ أَوْ لِغَيْرِهِ فِي الْجَنَّةِ كَهَاتَيْنِ إِذَا اتَّقَى وَأَشَارَ بِإِصْبُعَيْهِ الْوُسْطَى وَالَّتِي تَلِي الْإِبْهَام"',
+                'hadith-source': 'رواه مالك عن صفوان بن سليم',
+                'collective-sponsorship': 'الكفالة الجماعية',
+                'collective-amount': '100 درهم / 10 يورو',
+                'collective-desc': 'يقوم كل منخرط في الجمعية بالمساهمة كل شهر بـ 100 درهم مغربي (ما يعادل 10 يورو)، توزع مساهمات المنخرطين على الأيتام على شكل منح مالية شهرية.',
+                'individual-sponsorship': 'الكفالة الفردية',
+                'individual-amount': 'مبلغ مخصص',
+                'individual-desc': 'يختار المنخرط يتيماً أو أكثر ويحدد منحة مالية ترسل إليه كل شهر.',
+                'sponsorship-objectives-title': 'أهدافنا من كفالة اليتيم',
+                'sponsorship-obj-1': 'تمكين الأيتام من النمو الطبيعي السوي جسدياً ونفسياً وعقلياً واجتماعياً',
+                'sponsorship-obj-2': 'تأمين الرعاية الصحية والنفسية والاجتماعية والتربوية للأيتام',
+                'sponsorship-obj-3': 'صناعة نجاح وتألق اليتيم العلمي والتربوي والاجتماعي والاندماجي',
+                'sponsorship-obj-4': 'دعم أسرة اليتيم محافظة على تماسكها واستقرارها وأدوارها',
+                'beneficiaries-title': 'من يستفيد من كفالة اليتيم؟',
+                'beneficiaries-intro': 'يستفيد من كفالة اليتيم في بيئته الأسرية من تتوفر فيه مجموع الشروط الآتية:',
+                'condition-1': 'أن يكون اليتيم حقيقياً (وفاة الأب، أو الأم والأب معاً)',
+                'condition-2': 'أن يكون اليتيم يعيش مع أمه أو أحد جديه أو إخوته أو خالته.. لا في دار الأيتام',
+                'condition-3': 'أن تكون الأسرة التي تحتضن اليتيم فقيرة أو عاجزة',
+                'activities-title': 'أنشطتنا',
+                'activity-school': 'الدخول المدرسي',
+                'activity-school-desc': 'توفير المستلزمات المدرسية والحقائب للأطفال الأيتام والمحتاجين لضمان حقهم في التعليم.',
+                'activity-ramadan': 'سلة رمضان',
+                'activity-ramadan-desc': 'توزيع السلال الغذائية على الأسر المحتاجة خلال شهر رمضان المبارك.',
+                'activity-eid-clothes': 'ملابس العيد',
+                'activity-eid-clothes-desc': 'توفير الملابس الجديدة للأطفال الأيتام لإدخال الفرحة على قلوبهم في العيد.',
+                'activity-sacrifice': 'أضحية العيد',
+                'activity-sacrifice-desc': 'توزيع لحوم الأضاحي على الأسر الفقيرة والمحتاجة في عيد الأضحى المبارك.',
+                'activity-blankets': 'توزيع الأغطية',
+                'activity-blankets-desc': 'توفير الأغطية والملابس الشتوية للأسر المحتاجة خلال فصل الشتاء.',
+                'activity-projects': 'مشاريع أخرى',
+                'activity-projects-desc': 'مشاريع تنموية متنوعة لتحسين أوضاع المجتمع المحلي والمناطق القروية.',
+                'contact-title': 'اتصل بنا',
+                'address-label': 'العنوان:',
+                'phone-label': 'الهاتف:',
+                'bank-label': 'الحساب البنكي:',
+                'email-label': 'البريد الإلكتروني:',
+                'contact-form-title': 'أرسل لنا رسالة',
+                'form-name': 'الاسم:',
+                'form-email': 'البريد الإلكتروني:',
+                'form-message': 'الرسالة:',
+                'form-submit': 'إرسال الرسالة',
+                'social-title': 'تابعونا على وسائل التواصل',
+                'donation-modal-title': 'معلومات التبرع',
+                'donation-bank-name': 'البنك: القرض الفلاحي للمغرب',
+                'donation-account-label': 'رقم الحساب:',
+                'donation-association-name': 'باسم: جمعية كافل اليتيم',
+                'donation-thank-you': 'شكراً لكم على دعمكم ومساهمتكم في أعمال الخير',
+                'footer-text': '© 2025 جمعية كافل اليتيم إقليم فجيج - جميع الحقوق محفوظة'
+            },
+            fr: {
+                'site-title': 'Association Kafil Al-Yatim Province de Figuig',
+                'nav-home': 'Accueil',
+                'nav-about': 'À propos',
+                'nav-sponsorship': 'Parrainage d\'orphelins',
+                'nav-activities': 'Activités',
+                'nav-donate': 'Faire un don',
+                'nav-contact': 'Contact',
+                'hero-title': 'Association Kafil Al-Yatim Province de Figuig',
+                'hero-subtitle': 'Ensemble pour un avenir meilleur pour les orphelins et les nécessiteux',
+                'donate-button': 'Faire un don maintenant',
+                'about-title': 'À propos de nous',
+                'objectives-title': 'L\'association Kafil Al Yatim vise à:',
+                'objective-1': 'Prendre en charge les orphelins matériellement et moralement et veiller à leur bien-être.',
+                'objective-2': 'Contribuer à la réalisation des objectifs de l\'Initiative Nationale pour le Développement Humain et rechercher avec les parties visant le développement local et l\'amélioration du revenu individuel afin de réduire les causes de pauvreté et de marginalisation.',
+                'objective-3': 'Réparer les routes et désenclaver les zones rurales qui souffrent de fragilité et de pauvreté.',
+                'objective-4': 'Raviver et renforcer l\'esprit de coopération et de solidarité sociale.',
+                'objective-5': 'Encourager la scolarisation et le transport scolaire en milieu rural, notamment pour les enfants orphelins.',
+                'objective-6': 'Préserver l\'environnement et encourager le soutien aux projets environnementaux et aider au forage de puits.',
+                'objective-7': 'Traiter et aborder les questions concernant le soutien et l\'aide aux jeunes, à l\'enfance et aux femmes en milieu rural et urbain.',
+                'objective-8': 'Prendre soin des personnes âgées, des veuves et des orphelins et aider les pauvres et les nécessiteux.',
+                'objective-9': 'Conclure des partenariats avec les associations et organismes locaux, régionaux, nationaux et internationaux œuvrant dans un domaine conforme aux orientations de l\'association.',
+                'objective-10': 'Organiser des rencontres de sensibilisation concernant les affaires locales et nationales et des activités éducatives et récréatives.',
+                'objective-11': 'Coordonner avec les organismes et parties concernées pour améliorer les services sociaux et de santé en milieu rural et urbain et préparer les programmes y afférents.',
+                'objective-12': 'L\'association recourt à tous les moyens légitimes pour atteindre ses objectifs et adopte l\'approche du dialogue, de la coopération et du partage.',
+                'objective-13': 'Bénéficier des moyens de soutien accordés par les organismes publics, les collectivités locales et les organisations internationales gouvernementales et non gouvernementales et les initiatives individuelles et collectives visant à réaliser la coopération.',
+                'objective-14': 'Coordonner avec les organismes, services et conseils urbains et ruraux provinciaux, régionaux et nationaux pour faciliter les tâches.',
+                'objective-15': 'Coordonner avec les agences et le réseau de communication pour améliorer les services du réseau de communication en raison de sa détérioration dans la région et du fort besoin de la population en temps de maladie, de détresse et de mauvais temps.',
+                'objective-16': 'Contribuer au développement et s\'intéresser aux cas sociaux pauvres ainsi qu\'aux cas médicaux.',
+                'sponsorship-title': 'Programme de Parrainage d\'Orphelins',
+                'sponsorship-what-title': 'Que signifie le parrainage d\'orphelins',
+                'sponsorship-what-desc': 'Le parrainage d\'orphelins est une aide financière mensuelle régulière destinée à un ou plusieurs orphelins vivant dans leur environnement familial d\'origine, contribuant partiellement à assurer les conditions de vie décente pour eux et leur famille, incluant nourriture, vêtements et logement',
+                'hadith-text': '"Moi et celui qui prend en charge un orphelin, que ce soit le sien ou celui d\'autrui, serons au Paradis comme ces deux-là, s\'il craint Allah", et il fit un signe avec ses doigts, le majeur et l\'index',
+                'hadith-source': 'Rapporté par Malik d\'après Safwan ibn Sulaym',
+                'collective-sponsorship': 'Parrainage Collectif',
+                'collective-amount': '100 dirhams / 10 euros',
+                'collective-desc': 'Chaque membre de l\'association contribue chaque mois avec 100 dirhams marocains (équivalent à 10 euros), les contributions des membres sont distribuées aux orphelins sous forme d\'allocations financières mensuelles.',
+                'individual-sponsorship': 'Parrainage Individuel',
+                'individual-amount': 'Montant personnalisé',
+                'individual-desc': 'Le membre choisit un ou plusieurs orphelins et détermine une allocation financière qui lui est envoyée chaque mois.',
+                'sponsorship-objectives-title': 'Nos objectifs du parrainage d\'orphelins',
+                'sponsorship-obj-1': 'Permettre aux orphelins une croissance normale et saine physiquement, psychologiquement, mentalement et socialement',
+                'sponsorship-obj-2': 'Assurer les soins de santé, psychologiques, sociaux et éducatifs aux orphelins',
+                'sponsorship-obj-3': 'Créer le succès et l\'excellence scientifique, éducative, sociale et d\'intégration de l\'orphelin',
+                'sponsorship-obj-4': 'Soutenir la famille de l\'orphelin en préservant sa cohésion, sa stabilité et ses rôles',
+                'beneficiaries-title': 'Qui bénéficie du parrainage d\'orphelins?',
+                'beneficiaries-intro': 'Bénéficie du parrainage d\'orphelins dans son environnement familial celui qui remplit l\'ensemble des conditions suivantes:',
+                'condition-1': 'Être un véritable orphelin (décès du père, ou de la mère et du père ensemble)',
+                'condition-2': 'L\'orphelin vit avec sa mère ou l\'un de ses grands-parents ou ses frères ou sa tante.. pas dans un orphelinat',
+                'condition-3': 'La famille qui accueille l\'orphelin est pauvre ou dans le besoin',
+                'activities-title': 'Nos activités',
+                'activity-school': 'Rentrée scolaire',
+                'activity-school-desc': 'Fourniture de matériel scolaire et de cartables aux enfants orphelins et nécessiteux pour garantir leur droit à l\'éducation.',
+                'activity-ramadan': 'Panier Ramadan',
+                'activity-ramadan-desc': 'Distribution de paniers alimentaires aux familles nécessiteuses pendant le mois béni du Ramadan.',
+                'activity-eid-clothes': 'Vêtements de l\'Aïd',
+                'activity-eid-clothes-desc': 'Fourniture de nouveaux vêtements aux enfants orphelins pour apporter de la joie à leurs cœurs pendant l\'Aïd.',
+                'activity-sacrifice': 'Sacrifice de l\'Aïd',
+                'activity-sacrifice-desc': 'Distribution de viande de sacrifice aux familles pauvres et nécessiteuses lors de l\'Aïd Al-Adha béni.',
+                'activity-blankets': 'Distribution de couvertures',
+                'activity-blankets-desc': 'Fourniture de couvertures et de vêtements d\'hiver aux familles nécessiteuses pendant l\'hiver.',
+                'activity-projects': 'Autres projets',
+                'activity-projects-desc': 'Divers projets de développement pour améliorer les conditions de la communauté locale et des zones rurales.',
+                'contact-title': 'Contactez-nous',
+                'address-label': 'Adresse:',
+                'phone-label': 'Téléphone:',
+                'bank-label': 'Compte bancaire:',
+                'email-label': 'Email:',
+                'contact-form-title': 'Envoyez-nous un message',
+                'form-name': 'Nom:',
+                'form-email': 'Email:',
+                'form-message': 'Message:',
+                'form-submit': 'Envoyer le message',
+                'social-title': 'Suivez-nous sur les réseaux sociaux',
+                'donation-modal-title': 'Informations de don',
+                'donation-bank-name': 'Banque: Crédit Agricole du Maroc',
+                'donation-account-label': 'Numéro de compte:',
+                'donation-association-name': 'Au nom de: Association Kafil al Yatim ',
+                'donation-thank-you': 'Merci pour votre soutien et votre contribution aux œuvres de bienfaisance',
+                'footer-text': '© 2025 Association Kafil Al-Yatim Province de Figuig - Tous droits réservés'
+            },
+            en: {
+                'site-title': 'Kafil Al-Yatim Association Figuig Province',
+                'nav-home': 'Home',
+                'nav-about': 'About',
+                'nav-sponsorship': 'Sponsorship',
+                'nav-activities': 'Activities',
+                'nav-donate': 'Donate',
+                'nav-contact': 'Contact',
+                'hero-title': 'Kafil Al-Yatim Association Figuig Province',
+                'hero-subtitle': 'Together for a better future for orphans and the needy',
+                'donate-button': 'Donate Now',
+                'about-title': 'About Us',
+                'objectives-title': 'Kafil Al-Yatim Association aims to:',
+                'objective-1': 'Take care of orphans materially and morally and ensure their well-being.',
+                'objective-2': 'Contribute to achieving the goals of the National Initiative for Human Development and research with parties aiming for local development and improving individual income to reduce causes of poverty and marginalization.',
+                'objective-3': 'Repair roads and break isolation from rural areas suffering from fragility and poverty.',
+                'objective-4': 'Revive and strengthen the spirit of cooperation and social solidarity.',
+                'objective-5': 'Encourage schooling and school transport in rural areas, especially for orphaned children.',
+                'objective-6': 'Preserve the environment and encourage support for environmental projects and assist in well drilling.',
+                'objective-7': 'Address and handle issues concerning support and assistance for youth, childhood, and women in rural and urban areas.',
+                'objective-8': 'Care for the elderly, widows, and orphans and help the poor and needy.',
+                'objective-9': 'Establish partnerships with local, regional, national, and international associations and bodies working in fields compatible with the association\'s orientations.',
+                'objective-10': 'Organize awareness meetings concerning local and national affairs and educational and recreational activities.',
+                'objective-11': 'Coordinate with relevant bodies and parties to improve social and health services in rural and urban areas and prepare related programs.',
+                'objective-12': 'The association resorts to all legitimate means to achieve its goals and adopts the approach of dialogue, cooperation, and sharing.',
+                'objective-13': 'Benefit from support means granted by public bodies, local communities, and international governmental and non-governmental organizations and individual and collective initiatives aimed at achieving cooperation.',
+                'objective-14': 'Coordinate with bodies, services, and urban and rural provincial, regional, and national councils to facilitate tasks.',
+                'objective-15': 'Coordinate with agencies and communication networks to improve communication network services due to their deterioration in the region and the population\'s strong need for them during illness, hardship, and bad weather.',
+                'objective-16': 'Contribute to development and care for poor social cases as well as medical cases.',
+                'sponsorship-title': 'Orphan Sponsorship Program',
+                'sponsorship-what-title': 'What do we mean by orphan sponsorship',
+                'sponsorship-what-desc': 'Orphan sponsorship is a regular monthly financial assistance allocated to one or more orphans living in their original family environment, partially contributing to ensuring decent living conditions for them and their family, including food, clothing, and shelter',
+                'hadith-text': '"I and the one who sponsors an orphan, whether his own or someone else\'s, will be in Paradise like these two if he fears Allah", and he pointed with his middle finger and the one next to the thumb',
+                'hadith-source': 'Narrated by Malik from Safwan ibn Sulaym',
+                'collective-sponsorship': 'Collective Sponsorship',
+                'collective-amount': '100 dirhams / 10 euros',
+                'collective-desc': 'Each association member contributes every month by 100 Moroccan dirhams (equivalent to 10 euros), members\' contributions are distributed to orphans as monthly financial grants.',
+                'individual-sponsorship': 'Individual Sponsorship',
+                'individual-amount': 'Custom amount',
+                'individual-desc': 'The member chooses one or more orphans and determines a financial grant sent to them each month.',
+                'sponsorship-objectives-title': 'Our objectives from orphan sponsorship',
+                'sponsorship-obj-1': 'Enable orphans to grow normally and healthily physically, psychologically, mentally, and socially',
+                'sponsorship-obj-2': 'Ensure health, psychological, social, and educational care for orphans',
+                'sponsorship-obj-3': 'Create success and excellence in the orphan\'s scientific, educational, social, and integration aspects',
+                'sponsorship-obj-4': 'Support the orphan\'s family while maintaining its cohesion, stability, and roles',
+                'beneficiaries-title': 'Who benefits from orphan sponsorship?',
+                'beneficiaries-intro': 'Benefits from orphan sponsorship in their family environment those who meet all the following conditions:',
+                'condition-1': 'Being a true orphan (death of father, or both mother and father)',
+                'condition-2': 'The orphan lives with their mother or one of their grandparents or siblings or aunt.. not in an orphanage',
+                'condition-3': 'The family hosting the orphan is poor or needy',
+                'activities-title': 'Our Activities',
+                'activity-school': 'School Entry',
+                'activity-school-desc': 'Providing school supplies and bags to orphaned and needy children to ensure their right to education.',
+                'activity-ramadan': 'Ramadan Basket',
+                'activity-ramadan-desc': 'Distribution of food baskets to needy families during the blessed month of Ramadan.',
+                'activity-eid-clothes': 'Eid Clothes',
+                'activity-eid-clothes-desc': 'Providing new clothes to orphaned children to bring joy to their hearts during Eid.',
+                'activity-sacrifice': 'Eid Sacrifice',
+                'activity-sacrifice-desc': 'Distribution of sacrifice meat to poor and needy families during the blessed Eid Al-Adha.',
+                'activity-blankets': 'Blanket Distribution',
+                'activity-blankets-desc': 'Providing blankets and winter clothes to needy families during winter.',
+                'activity-projects': 'Other Projects',
+                'activity-projects-desc': 'Various development projects to improve conditions of the local community and rural areas.',
+                'contact-title': 'Contact Us',
+                'address-label': 'Address:',
+                'phone-label': 'Phone:',
+                'bank-label': 'Bank Account:',
+                'email-label': 'Email:',
+                'contact-form-title': 'Send us a message',
+                'form-name': 'Name:',
+                'form-email': 'Email:',
+                'form-message': 'Message:',
+                'form-submit': 'Send Message',
+                'social-title': 'Follow us on social media',
+                'donation-modal-title': 'Donation Information',
+                'donation-bank-name': 'Bank: Crédit Agricole Morocco',
+                'donation-account-label': 'Account Number:',
+                'donation-association-name': 'In the name of: Kafil Al Yatim',
+                'donation-thank-you': 'Thank you for your support and contribution to charitable works',
+                'footer-text': '© 2025 Kafil Al-Yatim Association Figuig Province - All rights reserved'
+            },
+            es: {
+                'site-title': 'Asociación Kafil Al-Yatim Provincia de Figuig',
+                'nav-home': 'Inicio',
+                'nav-about': 'Acerca de',
+                'nav-sponsorship': 'Apadrinamiento',
+                'nav-activities': 'Actividades',
+                'nav-donate': 'Donar',
+                'nav-contact': 'Contacto',
+                'hero-title': 'Asociación Kafil Al-Yatim Provincia de Figuig',
+                'hero-subtitle': 'Juntos por un futuro mejor para huérfanos y necesitados',
+                'donate-button': 'Donar Ahora',
+                'about-title': 'Acerca de Nosotros',
+                'objectives-title': 'La Asociación Kafil Al-Yatim tiene como objetivo:',
+                'objective-1': 'Cuidar a los huérfanos material y moralmente y velar por su bienestar.',
+                'objective-2': 'Contribuir al logro de los objetivos de la Iniciativa Nacional para el Desarrollo Humano e investigar con las partes que apuntan al desarrollo local y la mejora del ingreso individual para reducir las causas de pobreza y marginación.',
+                'objective-3': 'Reparar carreteras y romper el aislamiento de las zonas rurales que sufren de fragilidad y pobreza.',
+                'objective-4': 'Revivir y fortalecer el espíritu de cooperación y solidaridad social.',
+                'objective-5': 'Fomentar la escolarización y el transporte escolar en áreas rurales, especialmente para niños huérfanos.',
+                'objective-6': 'Preservar el medio ambiente y fomentar el apoyo a proyectos ambientales y ayudar en la perforación de pozos.',
+                'objective-7': 'Abordar y manejar cuestiones relacionadas con el apoyo y asistencia a jóvenes, niñez y mujeres en áreas rurales y urbanas.',
+                'objective-8': 'Cuidar a los ancianos, viudas y huérfanos y ayudar a los pobres y necesitados.',
+                'objective-9': 'Establecer asociaciones con asociaciones y organismos locales, regionales, nacionales e internacionales que trabajen en campos compatibles con las orientaciones de la asociación.',
+                'objective-10': 'Organizar reuniões de concienciación sobre asuntos locales y nacionales y actividades educativas y recreativas.',
+                'objective-11': 'Coordinar con organismos y partes relevantes para mejorar los servicios sociales y de salud en áreas rurales y urbanas y preparar programas relacionados.',
+                'objective-12': 'La asociación recurre a todos los medios legítimos para lograr sus objetivos y adopta el enfoque de diálogo, cooperación y compartir.',
+                'objective-13': 'Beneficiarse de los medios de apoyo otorgados por organismos públicos, comunidades locales y organizaciones internacionales gubernamentales y no gubernamentales e iniciativas individuales y colectivas dirigidas a lograr la cooperación.',
+                'objective-14': 'Coordinar con organismos, servicios y consejos urbanos y rurales provinciales, regionales y nacionales para facilitar las tareas.',
+                'objective-15': 'Coordinar con agencias y redes de comunicación para mejorar los servicios de red de comunicación debido a su deterioro en la región y la fuerte necesidad de la población durante enfermedad, dificultades y mal tiempo.',
+                'objective-16': 'Contribuir al desarrollo y cuidar casos sociales pobres así como casos médicos.',
+                'sponsorship-title': 'Programa de Apadrinamiento de Huérfanos',
+                'sponsorship-what-title': 'Qué entendemos por apadrinamiento de huérfanos',
+                'sponsorship-what-desc': 'El apadrinamiento de huérfanos es una ayuda financiera mensual regular asignada a uno o más huérfanos que viven en su entorno familiar original, contribuyendo parcialmente a asegurar condiciones de vida dignas para ellos y su familia, incluyendo comida, ropa y vivienda',
+                'hadith-text': '"Yo y quien patrocina a un huérfano, ya sea suyo o de otro, estaremos en el Paraíso como estos dos si teme a Allah", y señaló con su dedo medio y el que está junto al pulgar',
+                'hadith-source': 'Narrado por Malik de Safwan ibn Sulaym',
+                'collective-sponsorship': 'Apadrinamiento Colectivo',
+                'collective-amount': '100 dirhams / 10 euros',
+                'collective-desc': 'Ogni membro dell\'associazione versa 100 dirhams al mese marroquíes (equivalente a 10 euros), las contribuciones de los miembros se distribuyen a los huérfanos como subvenciones financieras mensuales.',
+                'individual-sponsorship': 'Apadrinamiento Individual',
+                'individual-amount': 'Cantidad personalizada',
+                'individual-desc': 'El miembro elige uno o más huérfanos y determina una subvención financiera que se les envía cada mes.',
+                'sponsorship-objectives-title': 'Nuestros objetivos del apadrinamiento de huérfanos',
+                'sponsorship-obj-1': 'Permitir a los huérfanos crecer de manera normal y saludable física, psicológica, mental y socialmente',
+                'sponsorship-obj-2': 'Asegurar atención médica, psicológica, social y educativa para los huérfanos',
+                'sponsorship-obj-3': 'Crear éxito y excelencia en los aspectos científicos, educativos, sociales y de integración del huérfano',
+                'sponsorship-obj-4': 'Apoyar a la familia del huérfano manteniendo su cohesión, estabilidad y roles',
+                'beneficiaries-title': '¿Quién se beneficia del apadrinamiento de huérfanos?',
+                'beneficiaries-intro': 'Se beneficia del apadrinamiento de huérfanos en su entorno familiar quien cumple todas las siguientes condiciones:',
+                'condition-1': 'Ser un verdadero huérfano (muerte del padre, o de ambos madre y padre)',
+                'condition-2': 'El huérfano vive con su madre o uno de sus abuelos o hermanos o tía.. no en un orfanato',
+                'condition-3': 'La familia que acoge al huérfano es pobre o necesitada',
+                'activities-title': 'Nuestras Actividades',
+                'activity-school': 'Entrada Escolar',
+                'activity-school-desc': 'Proporcionar útiles escolares y mochilas a niños huérfanos y necesitados para garantizar su derecho a la educación.',
+                'activity-ramadan': 'Canasta de Ramadán',
+                'activity-ramadan-desc': 'Distribución de canastas de alimentos a familias necesitadas durante el bendito mes de Ramadán.',
+                'activity-eid-clothes': 'Ropa de Eid',
+                'activity-eid-clothes-desc': 'Proporcionar ropa nueva a niños huérfanos para traer alegría a sus corazones durante el Eid.',
+                'activity-sacrifice': 'Sacrificio de Eid',
+                'activity-sacrifice-desc': 'Distribución de carne de sacrificio a familias pobres y necesitadas durante el bendito Eid Al-Adha.',
+                'activity-blankets': 'Distribución de Mantas',
+                'activity-blankets-desc': 'Proporcionar mantas y ropa de invierno a familias necesitadas durante el invierno.',
+                'activity-projects': 'Otros Proyectos',
+                'activity-projects-desc': 'Varios proyectos de desarrollo para mejorar las condiciones de la comunidad local y áreas rurales.',
+                'contact-title': 'Contáctanos',
+                'address-label': 'Dirección:',
+                'phone-label': 'Teléfono:',
+                'bank-label': 'Cuenta Bancaria:',
+                'email-label': 'Email:',
+                'contact-form-title': 'Envíanos un mensaje',
+                'form-name': 'Nombre:',
+                'form-email': 'Email:',
+                'form-message': 'Mensaje:',
+                'form-submit': 'Enviar Mensaje',
+                'social-title': 'Síguenos en redes sociales',
+                'donation-modal-title': 'Información de Donación',
+                'donation-bank-name': 'Banco: Crédit Agricole Marruecos',
+                'donation-account-label': 'Número de Cuenta:',
+                'donation-association-name': 'A nombre de: Asociación Kafil al Yatim ',
+                'donation-thank-you': 'Gracias por su apoyo y contribución a las obras de caridad',
+                'footer-text': '© 2025 Asociación Kafil Al-Yatim Provincia de Figuig - Todos los derechos reservados'
+            },
+            de: {
+                'site-title': 'Kafil Al-Yatim Verein Provinz Figuig',
+                'nav-home': 'Startseite',
+                'nav-about': 'Über uns',
+                'nav-sponsorship': 'Patenschaft',
+                'nav-activities': 'Aktivitäten',
+                'nav-donate': 'Spenden',
+                'nav-contact': 'Kontakt',
+                'hero-title': 'Kafil Al-Yatim Verein Provinz Figuig',
+                'hero-subtitle': 'Gemeinsam für eine bessere Zukunft für Waisen und Bedürftige',
+                'donate-button': 'Jetzt Spenden',
+                'about-title': 'Über Uns',
+                'objectives-title': 'Der Kafil Al-Yatim Verein zielt darauf ab:',
+                'objective-1': 'Waisen materiell und moralisch zu betreuen und für ihr Wohlbefinden zu sorgen.',
+                'objective-2': 'Zur Erreichung der Ziele der Nationalen Initiative für Menschliche Entwicklung beizutragen und mit Parteien zu forschen, die auf lokale Entwicklung und Verbesserung des individuellen Einkommens abzielen, um Ursachen von Armut und Marginalisierung zu reduzieren.',
+                'objective-3': 'Straßen zu reparieren und die Isolation von ländlichen Gebieten zu durchbrechen, die unter Fragilität und Armut leiden.',
+                'objective-4': 'Den Geist der Zusammenarbeit und sozialen Solidarität zu beleben und zu stärken.',
+                'objective-5': 'Schulbildung und Schultransport in ländlichen Gebieten zu fördern, insbesondere für Waisenkinder.',
+                'objective-6': 'Die Umwelt zu schützen und Unterstützung für Umweltprojekte zu fördern und beim Bohren von Brunnen zu helfen.',
+                'objective-7': 'Fragen bezüglich Unterstützung und Hilfe für Jugendliche, Kinder und Frauen in ländlichen und städtischen Gebieten zu behandeln und zu handhaben.',
+                'objective-8': 'Sich um ältere Menschen, Witwen und Waisen zu kümmern und Armen und Bedürftigen zu helfen.',
+                'objective-9': 'Partnerschaften mit lokalen, regionalen, nationalen und internationalen Vereinen und Organisationen zu etablieren, die in Bereichen arbeiten, die mit den Ausrichtungen des Vereins kompatibel sind.',
+                'objective-10': 'Bewusstseinstreffen zu lokalen und nationalen Angelegenheiten und Bildungs- und Freizeitaktivitäten zu organisieren.',
+                'objective-11': 'Mit relevanten Organisationen und Parteien zu koordinieren, um soziale und Gesundheitsdienste in ländlichen und städtischen Gebieten zu verbessern und verwandte Programme vorzubereiten.',
+                'objective-12': 'Der Verein greift auf alle legitimen Mittel zurück, um seine Ziele zu erreichen und nimmt den Ansatz von Dialog, Zusammenarbeit und Teilen an.',
+                'objective-13': 'Von Unterstützungsmitteln zu profitieren, die von öffentlichen Organisationen, lokalen Gemeinschaften und internationalen Regierungs- und Nichtregierungsorganisationen sowie individuellen und kollektiven Initiativen zur Erreichung der Zusammenarbeit gewährt werden.',
+                'objective-14': 'Mit Organisationen, Diensten und städtischen und ländlichen Provinz-, Regional- und Nationalräten zu koordinieren, um Aufgaben zu erleichtern.',
+                'objective-15': 'Mit Agenturen und Kommunikationsnetzwerken zu koordinieren, um Kommunikationsnetzwerkdienste aufgrund ihrer Verschlechterung in der Region und des starken Bedarfs der Bevölkerung während Krankheit, Not und schlechtem Wetter zu verbessern.',
+                'objective-16': 'Zur Entwicklung beizutragen und sich um arme soziale Fälle sowie medizinische Fälle zu kümmern.',
+                'sponsorship-title': 'Waisenpatenschaftsprogramm',
+                'sponsorship-what-title': 'Was verstehen wir unter Waisenpatenschaft',
+                'sponsorship-what-desc': 'Waisenpatenschaft ist eine regelmäßige monatliche finanzielle Unterstützung, die einem oder mehreren Waisen zugeteilt wird, die in ihrer ursprünglichen Familienumgebung leben und teilweise dazu beiträgt, würdige Lebensbedingungen für sie und ihre Familie zu gewährleisten, einschließlich Nahrung, Kleidung und Unterkunft',
+                'hadith-text': '"Ich und derjenige, der einen Waisen sponsert, sei es sein eigener oder der eines anderen, werden im Paradies wie diese beiden sein, wenn er Allah fürchtet", und er zeigte mit seinem Mittelfinger und dem neben dem Daumen',
+                'hadith-source': 'Überliefert von Malik von Safwan ibn Sulaym',
+                'collective-sponsorship': 'Kollektive Patenschaft',
+                'collective-amount': '100 Dirham / 10 Euro',
+                'collective-desc': 'Jedes Vereinsmitglied trägt pro Monat 100 marokkanische Dirham (entspricht 10 Euro) bei, die Beiträge der Mitglieder werden als monatliche finanzielle Zuschüsse an die Waisen verteilt.',
+                'individual-sponsorship': 'Individuelle Patenschaft',
+                'individual-amount': 'Individueller Betrag',
+                'individual-desc': 'Das Mitglied wählt einen oder mehrere Waisen aus und bestimmt einen finanziellen Zuschuss, der ihnen jeden Monat gesendet wird.',
+                'sponsorship-objectives-title': 'Unsere Ziele der Waisenpatenschaft',
+                'sponsorship-obj-1': 'Waisen ermöglichen, normal und gesund körperlich, psychologisch, geistig und sozial zu wachsen',
+                'sponsorship-obj-2': 'Gesundheits-, psychologische, soziale und Bildungsbetreuung für Waisen sicherstellen',
+                'sponsorship-obj-3': 'Erfolg und Exzellenz in den wissenschaftlichen, bildungsbezogenen, sozialen und Integrations-Aspekten des Waisen schaffen',
+                'sponsorship-obj-4': 'Die Familie des Waisen unterstützen und dabei ihren Zusammenhalt, ihre Stabilität und ihre Rollen bewahren',
+                'beneficiaries-title': 'Wer profitiert von der Waisenpatenschaft?',
+                'beneficiaries-intro': 'Von der Waisenpatenschaft in ihrer Familienumgebung profitiert derjenige, der alle folgenden Bedingungen erfüllt:',
+                'condition-1': 'Ein echter Waise sein (Tod des Vaters oder beider Eltern)',
+                'condition-2': 'Der Waise lebt bei seiner Mutter oder einem seiner Großeltern oder Geschwister oder Tante.. nicht in einem Waisenhaus',
+                'condition-3': 'Die Familie, die den Waisen aufnimmt, ist arm oder bedürftig',
+                'activities-title': 'Unsere Aktivitäten',
+                'activity-school': 'Schulanfang',
+                'activity-school-desc': 'Bereitstellung von Schulmaterial und Taschen für Waisen- und bedürftige Kinder, um ihr Recht auf Bildung zu gewährleisten.',
+                'activity-ramadan': 'Ramadan-Korb',
+                'activity-ramadan-desc': 'Verteilung von Lebensmittelkörben an bedürftige Familien während des gesegneten Monats Ramadan.',
+                'activity-eid-clothes': 'Eid-Kleidung',
+                'activity-eid-clothes-desc': 'Bereitstellung neuer Kleidung für Waisenkinder, um Freude in ihre Herzen während des Eid zu bringen.',
+                'activity-sacrifice': 'Eid-Opfer',
+                'activity-sacrifice-desc': 'Verteilung von Opferfleisch an arme und bedürftige Familien während des gesegneten Eid Al-Adha.',
+                'activity-blankets': 'Deckenverteilung',
+                'activity-blankets-desc': 'Bereitstellung von Decken und Winterkleidung für bedürftige Familien im Winter.',
+                'activity-projects': 'Andere Projekte',
+                'activity-projects-desc': 'Verschiedene Entwicklungsprojekte zur Verbesserung der Bedingungen der lokalen Gemeinschaft und ländlichen Gebiete.',
+                'contact-title': 'Kontaktieren Sie uns',
+                'address-label': 'Adresse:',
+                'phone-label': 'Telefon:',
+                'bank-label': 'Bankkonto:',
+                'email-label': 'E-Mail:',
+                'contact-form-title': 'Senden Sie uns eine Nachricht',
+                'form-name': 'Name:',
+                'form-email': 'E-Mail:',
+                'form-message': 'Nachricht:',
+                'form-submit': 'Nachricht senden',
+                'social-title': 'Folgen Sie uns in sozialen Medien',
+                'donation-modal-title': 'Spenden-Informationen',
+                'donation-bank-name': 'Bank: Crédit Agricole Marokko',
+                'donation-account-label': 'Kontonummer:',
+                'donation-association-name': 'Im Namen von: Kafil al Yatim',
+                'donation-thank-you': 'Vielen Dank für Ihre Unterstützung und Ihren Beitrag zu wohltätigen Werken',
+                'footer-text': '© 2025 Kafil Al-Yatim Verein Provinz Figuig - Alle Rechte vorbehalten'
+            },
+            it: {
+                'site-title': 'Associazione Kafil Al-Yatim Provincia di Figuig',
+                'nav-home': 'Home',
+                'nav-about': 'Chi siamo',
+                'nav-sponsorship': 'Sponsorizzazione',
+                'nav-activities': 'Attività',
+                'nav-donate': 'Dona',
+                'nav-contact': 'Contatti',
+                'hero-title': 'Associazione Kafil Al-Yatim Provincia di Figuig',
+                'hero-subtitle': 'Insieme per un futuro migliore per orfani e bisognosi',
+                'donate-button': 'Dona Ora',
+                'about-title': 'Chi Siamo',
+                'objectives-title': 'L\'Associazione Kafil Al-Yatim mira a:',
+                'objective-1': 'Prendersi cura degli orfani materialmente e moralmente e garantire il loro benessere.',
+                'objective-2': 'Contribuire al raggiungimento degli obiettivi dell\'Iniziativa Nazionale per lo Sviluppo Umano e ricercare con le parti che mirano allo sviluppo locale e al miglioramento del reddito individuale per ridurre le cause di povertà e marginalizzazione.',
+                'objective-3': 'Riparare le strade e rompere l\'isolamento dalle aree rurali che soffrono di fragilità e povertà.',
+                'objective-4': 'Rilanciare e rafforzare lo spirito di cooperazione e solidarietà sociale.',
+                'objective-5': 'Incoraggiare la scolarizzazione e il trasporto scolastico nelle aree rurali, specialmente per i bambini orfani.',
+                'objective-6': 'Preservare l\'ambiente e incoraggiare il supporto per progetti ambientali e assistere nella perforazione di pozzi.',
+                'objective-7': 'Affrontare e gestire questioni riguardanti il supporto e l\'assistenza per giovani, infanzia e donne in aree rurali e urbane.',
+                'objective-8': 'Prendersi cura degli anziani, vedove e orfani e aiutare i poveri e bisognosi.',
+                'objective-9': 'Stabilire partnership con associazioni e organismi locali, regionali, nazionali e internazionali che lavorano in campi compatibili con gli orientamenti dell\'associazione.',
+                'objective-10': 'Organizzare incontri di sensibilizzazione riguardanti affari locali e nazionali e attività educative e ricreative.',
+                'objective-11': 'Coordinare con organismi e parti rilevanti per migliorare i servizi sociali e sanitari in aree rurali e urbane e preparare programmi correlati.',
+                'objective-12': 'L\'associazione ricorre a tutti i mezzi legittimi per raggiungere i suoi obiettivi e adotta l\'approccio del dialogo, cooperazione e condivisione.',
+                'objective-13': 'Beneficiare dei mezzi di supporto concessi da organismi pubblici, comunità locali e organizzazioni internazionali governative e non governative e iniziative individuali e collettive mirate a raggiungere la cooperazione.',
+                'objective-14': 'Coordinare con organismi, servizi e consigli urbani e rurali provinciali, regionali e nazionali per facilitare i compiti.',
+                'objective-15': 'Coordinare con agenzie e reti di comunicazione per migliorare i servizi di rete di comunicazione a causa del loro deterioramento nella regione e del forte bisogno della popolazione durante malattia, difficoltà e cattivo tempo.',
+                'objective-16': 'Contribuire allo sviluppo e prendersi cura di casi sociali poveri così come casi medici.',
+                'sponsorship-title': 'Programma di Sponsorizzazione Orfani',
+                'sponsorship-what-title': 'Cosa intendiamo per sponsorizzazione di orfani',
+                'sponsorship-what-desc': 'La sponsorizzazione di orfani è un aiuto finanziario mensile regolare assegnato a uno o più orfani che vivono nel loro ambiente familiare originale, contribuendo parzialmente ad assicurare condizioni di vita dignitose per loro e la loro famiglia, inclusi cibo, vestiti e alloggio',
+                'hadith-text': '"Io e colui che sponsorizza un orfano, che sia il suo o di qualcun altro, saremo in Paradiso come questi due se teme Allah", e indicò con il dito medio e quello accanto al pollice',
+                'hadith-source': 'Narrato da Malik da Safwan ibn Sulaym',
+                'collective-sponsorship': 'Sponsorizzazione Collettiva',
+                'collective-amount': '100 dirham / 10 euro',
+                'collective-desc': 'Ogni membro dell\'associazione contribuisce por mes con 100 dirham marocchini (equivalenti a 10 euro), i contributi dei membri vengono distribuiti agli orfani come sovvenzioni finanziarie mensili.',
+                'individual-sponsorship': 'Sponsorizzazione Individuale',
+                'individual-amount': 'Importo personalizzato',
+                'individual-desc': 'Il membro sceglie uno o più orfani e determina una sovvenzione finanziaria che viene loro inviata ogni mese.',
+                'sponsorship-objectives-title': 'I nostri obiettivi dalla sponsorizzazione di orfani',
+                'sponsorship-obj-1': 'Permettere agli orfani di crescere normalmente e in modo sano fisicamente, psicologicamente, mentalmente e socialmente',
+                'sponsorship-obj-2': 'Assicurare cure sanitarie, psicologiche, sociali ed educative per gli orfani',
+                'sponsorship-obj-3': 'Creare successo ed eccellenza negli aspetti scientifici, educativi, sociali e di integrazione dell\'orfano',
+                'sponsorship-obj-4': 'Supportare la famiglia dell\'orfano mantenendo la sua coesione, stabilità e ruoli',
+                'beneficiaries-title': 'Chi beneficia della sponsorizzazione di orfani?',
+                'beneficiaries-intro': 'Beneficia della sponsorizzazione di orfani nel loro ambiente familiare chi soddisfa tutte le seguenti condizioni:',
+                'condition-1': 'Essere un vero orfano (morte del padre, o di entrambi madre e padre)',
+                'condition-2': 'L\'orfano vive con sua madre o uno dei suoi nonni o fratelli o zia.. non in un orfanotrofio',
+                'condition-3': 'La famiglia che ospita l\'orfano è povera o bisognosa',
+                'activities-title': 'Le Nostre Attività',
+                'activity-school': 'Inizio Scuola',
+                'activity-school-desc': 'Fornire materiale scolastico e zaini a bambini orfani e bisognosi per garantire il loro diritto all\'istruzione.',
+                'activity-ramadan': 'Cesto Ramadan',
+                'activity-ramadan-desc': 'Distribuzione di cesti alimentari a famiglie bisognose durante il benedetto mese di Ramadan.',
+                'activity-eid-clothes': 'Vestiti Eid',
+                'activity-eid-clothes-desc': 'Fornire vestiti nuovi a bambini orfani per portare gioia nei loro cuori durante l\'Eid.',
+                'activity-sacrifice': 'Sacrificio Eid',
+                'activity-sacrifice-desc': 'Distribuzione di carne di sacrificio a famiglie povere e bisognose durante il benedetto Eid Al-Adha.',
+                'activity-blankets': 'Distribuzione Coperte',
+                'activity-blankets-desc': 'Fornire coperte e vestiti invernali a famiglie bisognose durante l\'inverno.',
+                'activity-projects': 'Altri Progetti',
+                'activity-projects-desc': 'Vari progetti di sviluppo per migliorare le condizioni della comunità locale e delle aree rurali.',
+                'contact-title': 'Contattaci',
+                'address-label': 'Indirizzo:',
+                'phone-label': 'Telefono:',
+                'bank-label': 'Conto Bancario:',
+                'email-label': 'Email:',
+                'contact-form-title': 'Inviaci un messaggio',
+                'form-name': 'Nome:',
+                'form-email': 'Email:',
+                'form-message': 'Messaggio:',
+                'form-submit': 'Invia Messaggio',
+                'social-title': 'Seguici sui social media',
+                'donation-modal-title': 'Informazioni Donazione',
+                'donation-bank-name': 'Banca: Crédit Agricole Marocco',
+                'donation-account-label': 'Numero Conto:',
+                'donation-association-name': 'A nome di: Associazione Kafil al Yatim',
+                'donation-thank-you': 'Grazie per il vostro supporto e contributo alle opere di carità',
+                'footer-text': '© 2025 Associazione Kafil Al-Yatim Provincia di Figuig - Tutti i diritti riservati'
+            },
+            nl: {
+                'site-title': 'Kafil Al-Yatim Vereniging Provincie Figuig',
+                'nav-home': 'Home',
+                'nav-about': 'Over ons',
+                'nav-sponsorship': 'Sponsoring',
+                'nav-activities': 'Activiteiten',
+                'nav-donate': 'Doneren',
+                'nav-contact': 'Contact',
+                'hero-title': 'Kafil Al-Yatim Vereniging Provincie Figuig',
+                'hero-subtitle': 'Samen voor een betere toekomst voor wezen en behoeftigen',
+                'donate-button': 'Doneer Nu',
+                'about-title': 'Over Ons',
+                'objectives-title': 'Kafil Al-Yatim Vereniging streeft naar:',
+                'objective-1': 'Zorgen voor wezen materieel en moreel en zorgen voor hun welzijn.',
+                'objective-2': 'Bijdragen aan het bereiken van de doelen van het Nationaal Initiatief voor Menselijke Ontwikkeling en onderzoeken met partijen die gericht zijn op lokale ontwikkeling en verbetering van individueel inkomen om oorzaken van armoede en marginalisatie te verminderen.',
+                'objective-3': 'Wegen repareren en isolatie doorbreken van landelijke gebieden die lijden onder kwetsbaarheid en armoede.',
+                'objective-4': 'De geest van samenwerking en sociale solidariteit doen herleven en versterken.',
+                'objective-5': 'Onderwijs en schoolvervoer in landelijke gebieden aanmoedigen, vooral voor weeskinderen.',
+                'objective-6': 'Het milieu behouden en steun voor milieuprojecten aanmoedigen en helpen bij het boren van putten.',
+                'objective-7': 'Kwesties aangaande steun en hulp voor jongeren, kinderen en vrouwen in landelijke en stedelijke gebieden aanpakken en behandelen.',
+                'objective-8': 'Zorgen voor ouderen, weduwen en wezen en helpen van armen en behoeftigen.',
+                'objective-9': 'Partnerschappen aangaan met lokale, regionale, nationale en internationale verenigingen en organisaties die werken in gebieden compatibel met de oriëntaties van de vereniging.',
+                'objective-10': 'Bewustzijnsbijeenkomsten organiseren betreffende lokale en nationale zaken en educatieve en recreatieve activiteiten.',
+                'objective-11': 'Coördineren met relevante organisaties en partijen om sociale en gezondheidsdiensten in landelijke en stedelijke gebieden te verbeteren en gerelateerde programma\'s voor te bereiden.',
+                'objective-12': 'De vereniging grijpt naar alle legitieme middelen om haar doelen te bereiken en neemt de benadering van dialoog, samenwerking en delen aan.',
+                'objective-13': 'Profiteren van steunmiddelen verleend door publieke organisaties, lokale gemeenschappen en internationale gouvernementele en niet-gouvernementele organisaties en individuele en collectieve initiatieven gericht op het bereiken van samenwerking.',
+                'objective-14': 'Coördineren met organisaties, diensten en stedelijke en landelijke provinciale, regionale en nationale raden om taken te vergemakkelijken.',
+                'objective-15': 'Coördineren met agentschappen en communicatienetwerken om communicatienetwerkdiensten te verbeteren vanwege hun achteruitgang in de regio en de sterke behoefte van de bevolking tijdens ziekte, nood en slecht weer.',
+                'objective-16': 'Bijdragen aan ontwikkeling en zorgen voor arme sociale gevallen evenals medische gevallen.',
+                'sponsorship-title': 'Wezensponsoring Programma',
+                'sponsorship-what-title': 'Wat bedoelen we met wezensponsoring',
+                'sponsorship-what-desc': 'Wezensponsoring is een regelmatige maandelijkse financiële hulp toegewezen aan een of meer wezen die in hun oorspronkelijke familieomgeving leven, gedeeltelijk bijdragend aan het waarborgen van waardige levensomstandigheden voor hen en hun familie, inclusief voedsel, kleding en onderdak',
+                'hadith-text': '"Ik en degene die een wees sponsort, of het nu zijn eigen of die van iemand anders is, zullen in het Paradijs zijn zoals deze twee als hij Allah vreest", en hij wees met zijn middelvinger en die naast de duim',
+                'hadith-source': 'Verteld door Malik van Safwan ibn Sulaym',
+                'collective-sponsorship': 'Collectieve Sponsoring',
+                'collective-amount': '100 dirham / 10 euro',
+                'collective-desc': 'Elk lid van de vereniging draagt ​​maandelijks 100 Marokkaanse dirham bij. (equivalent aan 10 euro), de bijdragen van leden worden verdeeld onder wezen als maandelijkse financiële subsidies.',
+                'individual-sponsorship': 'Individuele Sponsoring',
+                'individual-amount': 'Aangepast bedrag',
+                'individual-desc': 'Het lid kiest een of meer wezen en bepaalt een financiële subsidie die elke maand naar hen wordt gestuurd.',
+                'sponsorship-objectives-title': 'Onze doelstellingen van wezensponsoring',
+                'sponsorship-obj-1': 'Wezen in staat stellen normaal en gezond te groeien fysiek, psychologisch, mentaal en sociaal',
+                'sponsorship-obj-2': 'Gezondheids-, psychologische, sociale en educatieve zorg voor wezen waarborgen',
+                'sponsorship-obj-3': 'Succes en excellentie creëren in de wetenschappelijke, educatieve, sociale en integratie-aspecten van de wees',
+                'sponsorship-obj-4': 'De familie van de wees ondersteunen terwijl hun samenhang, stabiliteit en rollen behouden blijven',
+                'beneficiaries-title': 'Wie profiteert van wezensponsoring?',
+                'beneficiaries-intro': 'Profiteert van wezensponsoring in hun familieomgeving degene die voldoet aan alle volgende voorwaarden:',
+                'condition-1': 'Een echte wees zijn (dood van vader, of beide ouders)',
+                'condition-2': 'De wees leeft bij zijn moeder of een van zijn grootouders of broers/zussen of tante.. niet in een weeshuis',
+                'condition-3': 'De familie die de wees opvangt is arm of behoeftig',
+                'activities-title': 'Onze Activiteiten',
+                'activity-school': 'Schoolbegin',
+                'activity-school-desc': 'Schoolbenodigdheden en tassen verstrekken aan weeskinderen en behoeftigen om hun recht op onderwijs te waarborgen.',
+                'activity-ramadan': 'Ramadan Mand',
+                'activity-ramadan-desc': 'Distributie van voedselmanden aan behoeftige gezinnen tijdens de gezegende maand Ramadan.',
+                'activity-eid-clothes': 'Eid Kleding',
+                'activity-eid-clothes-desc': 'Nieuwe kleding verstrekken aan weeskinderen om vreugde in hun harten te brengen tijdens Eid.',
+                'activity-sacrifice': 'Eid Offer',
+                'activity-sacrifice-desc': 'Distributie van offervlees aan arme en behoeftige gezinnen tijdens de gezegende Eid Al-Adha.',
+                'activity-blankets': 'Dekens Distributie',
+                'activity-blankets-desc': 'Dekens en winterkleding verstrekken aan behoeftige gezinnen tijdens de winter.',
+                'activity-projects': 'Andere Projecten',
+                'activity-projects-desc': 'Verschillende ontwikkelingsprojecten om de omstandigheden van de lokale gemeenschap en landelijke gebieden te verbeteren.',
+                'contact-title': 'Neem Contact Op',
+                'address-label': 'Adres:',
+                'phone-label': 'Telefoon:',
+                'bank-label': 'Bankrekening:',
+                'email-label': 'Email:',
+                'contact-form-title': 'Stuur ons een bericht',
+                'form-name': 'Naam:',
+                'form-email': 'Email:',
+                'form-message': 'Bericht:',
+                'form-submit': 'Bericht Verzenden',
+                'social-title': 'Volg ons op sociale media',
+                'donation-modal-title': 'Donatie Informatie',
+                'donation-bank-name': 'Bank: Crédit Agricole Marokko',
+                'donation-account-label': 'Rekeningnummer:',
+                'donation-association-name': 'Op naam van: Kafil al Yatim',
+                'donation-thank-you': 'Dank u voor uw steun en bijdrage aan liefdadigheidswerken',
+                'footer-text': '© 2025 Kafil Al-Yatim Vereniging Provincie Figuig - Alle rechten voorbehouden'
+            },
+            pt: {
+                'site-title': 'Associação Kafil Al-Yatim Província de Figuig',
+                'nav-home': 'Início',
+                'nav-about': 'Sobre',
+                'nav-sponsorship': 'Apadrinhamento',
+                'nav-activities': 'Atividades',
+                'nav-donate': 'Doar',
+                'nav-contact': 'Contato',
+                'hero-title': 'Associação Kafil Al-Yatim Província de Figuig',
+                'hero-subtitle': 'Juntos por um futuro melhor para órfãos e necessitados',
+                'donate-button': 'Doar Agora',
+                'about-title': 'Sobre Nós',
+                'objectives-title': 'A Associação Kafil Al-Yatim visa:',
+                'objective-1': 'Cuidar de órfãos material e moralmente e garantir seu bem-estar.',
+                'objective-2': 'Contribuir para alcançar os objetivos da Iniciativa Nacional para o Desenvolvimento Humano e pesquisar com partes que visam o desenvolvimento local e melhoria da renda individual para reduzir causas de pobreza e marginalização.',
+                'objective-3': 'Reparar estradas e quebrar o isolamento de áreas rurais que sofrem de fragilidade e pobreza.',
+                'objective-4': 'Reviver e fortalecer o espírito de cooperação e solidariedade social.',
+                'objective-5': 'Encorajar a escolarização e transporte escolar em áreas rurais, especialmente para crianças órfãs.',
+                'objective-6': 'Preservar o meio ambiente e encorajar apoio para projetos ambientais e ajudar na perfuração de poços.',
+                'objective-7': 'Abordar e lidar com questões sobre apoio e assistência para jovens, infância e mulheres em áreas rurais e urbanas.',
+                'objective-8': 'Cuidar de idosos, viúvas e órfãos e ajudar pobres e necessitados.',
+                'objective-9': 'Estabelecer parcerias com associações e organismos locais, regionais, nacionais e internacionais trabalhando em campos compatíveis com as orientações da associação.',
+                'objective-10': 'Organizar reuniões de conscientização sobre assuntos locais e nacionais e atividades educacionais e recreativas.',
+                'objective-11': 'Coordenar com organismos e partes relevantes para melhorar serviços sociais e de saúde em áreas rurais e urbanas e preparar programas relacionados.',
+                'objective-12': 'A associação recorre a todos os meios legítimos para alcançar seus objetivos e adota a abordagem de diálogo, cooperação e compartilhamento.',
+                'objective-13': 'Beneficiar-se de meios de apoio concedidos por organismos públicos, comunidades locais e organizações internacionais governamentais e não governamentais e iniciativas individuais e coletivas visando alcançar a cooperação.',
+                'objective-14': 'Coordenar com organismos, serviços e conselhos urbanos e rurais provinciais, regionais e nacionais para facilitar tarefas.',
+                'objective-15': 'Coordenar com agências e redes de comunicação para melhorar serviços de rede de comunicação devido à sua deterioração na região e forte necessidade da população durante doença, dificuldades e mau tempo.',
+                'objective-16': 'Contribuir para o desenvolvimento e cuidar de casos sociais pobres bem como casos médicos.',
+                'sponsorship-title': 'Programa de Apadrinhamento de Órfãos',
+                'sponsorship-what-title': 'O que queremos dizer com apadrinhamento de órfãos',
+                'sponsorship-what-desc': 'O apadrinhamento de órfãos é uma ajuda financeira mensal regular destinada a um ou mais órfãos vivendo em seu ambiente familiar original, contribuindo parcialmente para garantir condições de vida dignas para eles e sua família, incluindo comida, roupas e abrigo',
+                'hadith-text': '"Eu e aquele que patrocina um órfão, seja seu próprio ou de outra pessoa, estaremos no Paraíso como estes dois se ele teme a Allah", e ele apontou com seu dedo médio e o próximo ao polegar',
+                'hadith-source': 'Narrado por Malik de Safwan ibn Sulaym',
+                'collective-sponsorship': 'Apadrinhamento Coletivo',
+                'collective-amount': '100 dirhams / 10 euros',
+                'collective-desc': 'Cada membro da associação contribui com 100 dirhams marroquinos todo mês (equivalente a 10 euros), as contribuições dos membros são distribuídas aos órfãos como subsídios financeiros mensais.',
+                'individual-sponsorship': 'Apadrinhamento Individual',
+                'individual-amount': 'Quantia personalizada',
+                'individual-desc': 'O membro escolhe um ou mais órfãos e determina um subsídio financeiro que é enviado a eles a cada mês.',
+                'sponsorship-objectives-title': 'Nossos objetivos do apadrinhamento de órfãos',
+                'sponsorship-obj-1': 'Permitir que órfãos cresçam normalmente e saudavelmente física, psicológica, mental e socialmente',
+                'sponsorship-obj-2': 'Garantir cuidados de saúde, psicológicos, sociais e educacionais para órfãos',
+                'sponsorship-obj-3': 'Criar sucesso e excelência nos aspectos científicos, educacionais, sociais e de integração do órfão',
+                'sponsorship-obj-4': 'Apoiar a família do órfão mantendo sua coesão, estabilidade e papéis',
+                'beneficiaries-title': 'Quem se beneficia do apadrinhamento de órfãos?',
+                'beneficiaries-intro': 'Beneficia-se do apadrinhamento de órfãos em seu ambiente familiar aquele que atende a todas as seguintes condições:',
+                'condition-1': 'Ser um verdadeiro órfão (morte do pai, ou de ambos os pais)',
+                'condition-2': 'O órfão vive com sua mãe ou um de seus avós ou irmãos ou tia.. não em um orfanato',
+                'condition-3': 'A família que acolhe o órfão é pobre ou necessitada',
+                'activities-title': 'Nossas Atividades',
+                'activity-school': 'Entrada Escolar',
+                'activity-school-desc': 'Fornecer material escolar e mochilas para crianças órfãs e necessitadas para garantir seu direito à educação.',
+                'activity-ramadan': 'Cesta Ramadã',
+                'activity-ramadan-desc': 'Distribuição de cestas de alimentos para famílias necessitadas durante o abençoado mês do Ramadã.',
+                'activity-eid-clothes': 'Roupas Eid',
+                'activity-eid-clothes-desc': 'Fornecer roupas novas para crianças órfãs para trazer alegria aos seus corações durante o Eid.',
+                'activity-sacrifice': 'Sacrifício Eid',
+                'activity-sacrifice-desc': 'Distribuição de carne de sacrifício para famílias pobres e necessitadas durante o abençoado Eid Al-Adha.',
+                'activity-blankets': 'Distribuição de Cobertores',
+                'activity-blankets-desc': 'Fornecer cobertores e roupas de inverno para famílias necessitadas durante o inverno.',
+                'activity-projects': 'Outros Projetos',
+                'activity-projects-desc': 'Vários projetos de desenvolvimento para melhorar as condições da comunidade local e áreas rurais.',
+                'contact-title': 'Entre em Contato',
+                'address-label': 'Endereço:',
+                'phone-label': 'Telefone:',
+                'bank-label': 'Conta Bancária:',
+                'email-label': 'Email:',
+                'contact-form-title': 'Envie-nos uma mensagem',
+                'form-name': 'Nome:',
+                'form-email': 'Email:',
+                'form-message': 'Mensagem:',
+                'form-submit': 'Enviar Mensagem',
+                'social-title': 'Siga-nos nas redes sociais',
+                'donation-modal-title': 'Informações de Doação',
+                'donation-bank-name': 'Banco: Crédit Agricole Marrocos',
+                'donation-account-label': 'Número da Conta:',
+                'donation-association-name': 'Em nome de: Associação Kafil al Yatim',
+                'donation-thank-you': 'Obrigado pelo seu apoio e contribuição para obras de caridade',
+                'footer-text': '© 2025 Associação Kafil Al-Yatim Província de Figuig - Todos os direitos reservados'
+            }
+        };
+
+        let currentLanguage = 'ar';
+
+        // Language switching function - FIXED
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            // Find the button that was clicked by matching the language parameter
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.getAttribute('onclick').includes(`'${lang}'`)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Update text direction and language attribute
+            const html = document.documentElement;
+            if (lang === 'ar') {
+                html.setAttribute('dir', 'rtl');
+                html.setAttribute('lang', 'ar');
+            } else {
+                html.setAttribute('dir', 'ltr');
+                html.setAttribute('lang', lang);
+            }
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update page title
+            document.title = translations[lang]['site-title'] + ' - Kafil Al-Yatim Association';
+        }
+
+        // Donation modal functions
+        function showDonationModal() {
+            document.getElementById('donationModal').style.display = 'block';
+        }
+
+        function closeDonationModal() {
+            document.getElementById('donationModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('donationModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Form submission with email functionality
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Message from ${name} - Association Website`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+            const mailtoLink = `mailto:akyf21@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show confirmation message
+            alert(translations[currentLanguage]['form-submit'] + '\n\n' + 
+                  translations[currentLanguage]['form-name'] + ' ' + name + '\n' +
+                  translations[currentLanguage]['form-email'] + ' ' + email + '\n' +
+                  translations[currentLanguage]['form-message'] + ' ' + message);
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial language to Arabic
+            changeLanguage('ar');
+            
+            // Add some dynamic behavior
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.classList.add('fade-in');
+            }
+        });
+    </script>
+</body>
+</html>
